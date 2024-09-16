@@ -61,6 +61,7 @@ const App = () => {
         completed: true,
         timestamp: new Date().toISOString()
       });
+      setShowConfirmation(false);
       setCurrentScreen('thankYou');
     } catch (err) {
       setError('Failed to submit survey. Please try again.');
